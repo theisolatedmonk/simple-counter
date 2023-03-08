@@ -44,4 +44,5 @@ body {
     font-size: 18px;
     justify-content: space-between;
     background-color: gray;
+    cursor: pointer;
 }
