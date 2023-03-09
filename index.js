@@ -6,13 +6,17 @@ const minusBtn = document.getElementById("minus");
 let value = 0
 
 function increment() {
-    output.innerHTML = value++;
+    output.innerHTML = ++value;
 }
 
 function decriment() {
-    output.innerHTML = value--;
+    output.innerHTML = --value;
 }
 
 function reset() {
     output.innerHTML = value = 0
 }
+
+pluseBtn.addEventListener("click", increment);
+resetBtn.addEventListener("click", reset);
+minusBtn.addEventListener("click", decriment);
